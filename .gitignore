@@ -5,3 +5,6 @@
 /.idea
 /.settings
 /.gradle
+/build/android-profile
+/build/generated
+/build/intermediates
