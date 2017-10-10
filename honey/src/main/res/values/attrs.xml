@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="sexangleImageView">
+        <attr name="backcolor" format="integer" />
+        <attr name="textSize" format="dimension" />
+        <attr name="big" format="boolean" />
+        <attr name="home" format="integer" />
+        <attr name="texts" format="string" />
+    </declare-styleable>
+    <declare-styleable name="ShimmerView">
+        <attr name="reflectionColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="uxswitch">
+        <attr name="mCheckedString" format="string" />
+        <attr name="mUnCheckedString" format="string" />
+    </declare-styleable>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+</resources> 

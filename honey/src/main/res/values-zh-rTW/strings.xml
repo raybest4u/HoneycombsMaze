@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">蜂巢迷宮</string>
+    <string name="action_settings">設置</string>
+    <string name="honey">蜂巢迷宮</string>
+    <string name="press_again_exit">再按一次退出</string>
+    <string name="turn_bg_music">打開背景音樂</string>
+    <string name="turn_song">打開音效</string>
+    <string name="about_us">關於我們</string>
+    <string name="help">幫助</string>
+    <string name="check_update">檢測更新</string>
+    <string name="t_success">恭喜你過關了！</string>
+    <string name="menu_1">肆階</string>
+    <string name="menu_2">伍階</string>
+    <string name="menu_3">陸階</string>
+    <string name="menu_4">柒階</string>
+    <string name="menu_5">極限肆階</string>
+    <string name="menu_6">極限陸階</string>
+    <string name="menu_7">極限柒階</string>
+    <string name="menu_8">最強大腦</string>
+    <string name="menu_9">設置</string>
+    <string name="step">步數:</string>
+    <string name="noway">此路不通</string>
+    <string name="us_team">ELF团队为你精心打造</string>
+    <string name="need_collect_key">你須要收集所有的鑰匙才能打開出口！</string>
+</resources>

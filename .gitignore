@@ -1,2 +1,7 @@
-/HoneycombsMaze/.gradle
-/HoneycombsMaze/*
+/bin
+/gen
+/project.properties
+/proguard
+/.idea
+/.settings
+/.gradle

@@ -1,0 +1,24 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!-- API 14 theme customizations can go here. -->
+    </style>
+    <style name="FullscreenTheme"  parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/color_flight</item>
+        <item name="colorPrimaryDark">@color/color_user</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowNoTitle">true</item>
+         <item name="windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+         <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item> 
+    </style>
+</resources>

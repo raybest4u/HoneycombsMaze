@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/copy_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="12dip"
+        android:text="@string/all_rights_reserved"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+    <com.elf.ixxo.view.shimmer.ShimmerTextView
+        android:id="@+id/shimmer_tv" 
+        android:text="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#99009999"
+        android:textSize="30sp"
+        android:layout_marginBottom="50.0dip"
+        android:gravity="center"
+        style="@style/MyTextView"/>
+
+            <ProgressBar
+                android:id="@+id/refresh_list_footer_progressbar"
+                android:layout_width="16dip"
+                android:layout_height="16dip"
+                android:layout_gravity="center"
+                android:layout_above="@id/shimmer_tv"
+                android:layout_marginBottom="15dip"
+                android:layout_centerHorizontal="true"
+                android:indeterminate="true"
+                android:indeterminateBehavior="repeat"
+                android:indeterminateDrawable="@drawable/common_loading4" />
+
+</RelativeLayout>

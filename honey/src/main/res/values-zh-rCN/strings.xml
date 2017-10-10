@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">蜂巢迷宫</string>
+    <string name="action_settings">设置</string>
+    <string name="honey">蜂巢迷宫</string>
+    <string name="press_again_exit">再按一次退出</string>
+    <string name="turn_bg_music">打开背景音乐</string>
+    <string name="turn_song">打开音效</string>
+    <string name="about_us">关于我们</string>
+    <string name="help">我们是ELF团队，联系邮箱：elfapp@163.com</string>
+    <string name="check_update">检测更新</string>
+    <string name="t_success">恭喜你过关了！</string>
+    <string name="menu_1">四阶</string>
+    <string name="menu_2">五阶</string>
+    <string name="menu_3">六阶</string>
+    <string name="menu_4">七阶</string>
+    <string name="menu_5">极限四阶</string>
+    <string name="menu_6">极限五阶</string>
+    <string name="menu_7">极限六阶</string>
+    <string name="menu_8">最强大脑</string>
+    <string name="menu_9">设置</string>
+    <string name="step">步数:</string>
+    <string name="noway">此路不通</string>
+    <string name="us_team">ELF团队为你精心打造</string>
+    <string name="need_collect_key">这是出口,\n但你需要收集所以钥匙才能召唤出神龙！</string>
+</resources>

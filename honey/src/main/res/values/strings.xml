@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Honeycombs Maze</string>
+    <string name="app_version">2.0.0</string>
+    <string name="all_rights_reserved">Copyright © 2014&#8211;2020 the team of ELF All Rights Reserved.</string>
+    <string name="action_settings">Settings</string>
+    <string name="honey">HoneycombsMaze</string>
+    <string name="press_again_exit">Press back again to exit.</string>
+    <string name="turn_bg_music">Turn on the background music</string>
+    <string name="turn_song">Turn on the sound</string>
+    <string name="about_us">ABOUT US</string>
+    <string name="help">HELP</string>
+    <string name="check_update">CHECK FOR UPGRADE </string>
+    <string name="t_success">Congratulations！</string>
+    <string name="menu_1">Veidoo 4</string>
+    <string name="menu_2">Veidoo 5</string>
+    <string name="menu_3">Veidoo 6</string>
+    <string name="menu_4">Veidoo 7</string>
+    <string name="menu_5">Super 4</string>
+    <string name="menu_6">Super 5</string>
+    <string name="menu_7">Super 6</string>
+    <string name="menu_8">Super 7</string>
+    <string name="menu_9">Setting</string>
+    <string name="step">Step:</string>
+    <string name="noway">Wrong path. No thoroughfare</string>
+    <string name="need_collect_key">You need to collect all the keys to open the door.</string>
+    <string name="us_team">From the team called ELF</string>
+    <string name="app_error">process erro</string>
+    <string name="app_error_title">report</string>
+    <string name="app_error_message">Thanks your report！</string>
+    <string name="app_error_toast">:] \n</string>
+    <string name="submit_report">sent</string>
+    <string name="submit_cancle">refuse</string>
+    <string name="choose_email_client">choose client！</string>
+</resources>

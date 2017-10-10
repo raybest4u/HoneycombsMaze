@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.elf.ixxo" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".maze.App"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.elf.ixxo.MazeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="elf"
+                    android:host="wj8734.cm"
+                    android:pathPrefix="/open"
+                    />
+            </intent-filter>
+           </activity>
+        <activity
+            android:name="com.elf.ixxo.SlashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.elf.ixxo.SettingActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <service
+            android:name=".maze.MusicService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.ray.Android.MUSIC" />
+            </intent-filter>
+        </service>
+
+        <!-- *******************   umeng updat     *********************** -->
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="54bf4260fd98c50c32000291"/>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="EFL"/>
+
+        <!-- targetSDKVersion >= 24时才需要添加这个provider。provider的authorities属性的值为${applicationId}.fileprovider，请开发者根据自己的${applicationId}来设置这个值，例如本例中applicationId为"com.qq.e.union.demo"。 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.elf.ixxo.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/gdt_file_path" />
+        </provider>
+
+        <!-- 声明SDK所需要的组件 -->
+        <service
+            android:name="com.qq.e.comm.DownloadService"
+            android:exported="false"/>
+        <!-- 请开发者注意字母的大小写，ADActivity，而不是AdActivity -->
+        <activity
+            android:name="com.qq.e.ads.ADActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"/>
+    </application>
+
+</manifest>

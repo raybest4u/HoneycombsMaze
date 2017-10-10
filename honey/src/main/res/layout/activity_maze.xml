@@ -1,0 +1,196 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main" >
+    <TextView
+        android:id="@+id/tv_keys"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:drawableLeft="@drawable/key_min"
+        android:textColor="@color/orange"
+        android:text="@string/app_name"
+        android:layout_marginTop="@dimen/margin_key"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+
+    <ImageButton
+        android:id="@+id/btn_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="@dimen/marginBottom"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/transparent"
+        android:src="@drawable/btn_4"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/marginBottom"
+        android:layout_gravity="bottom|center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:text="@string/app_name"
+            android:textColor="@color/color_flight"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <com.elf.ixxo.view.shimmer.ShimmerTextView
+            android:id="@+id/shimmer_team"
+            style="@style/MyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:gravity="center"
+            android:text="@string/us_team"
+            android:textColor="@color/color_team"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="@dimen/marginBottom"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/transparent"
+        android:src="@drawable/home"
+        android:visibility="gone" />
+
+    <com.elf.ixxo.view.SixBoxMenuViewGroup
+        android:id="@+id/g_menus"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="@dimen/margin_menu_top"
+        android:layout_marginBottom="48dp"/>
+
+    <com.elf.ixxo.view.SixangleBoxViewGroup
+        android:id="@+id/g_room2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/roll_margin"
+        android:visibility="gone" />
+
+    <com.elf.ixxo.view.SixangleBoxViewGroup
+        android:id="@+id/g_room1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/roll_margin"
+        android:visibility="gone" />
+
+    <com.elf.ixxo.view.SexangleViewGroup
+        android:id="@+id/sexangleView"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:clickable="false"
+        android:focusable="false"
+        android:visibility="gone" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_success"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="48dp"
+        android:layout_gravity="center"
+        android:background="#00000000"
+        android:clickable="false"
+        android:focusable="false"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="46dp"
+            android:text="@string/t_success"
+            android:textColor="@color/yellow"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/success"
+            android:background="@color/transparent" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/iv_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+         android:layout_gravity="center"
+        android:visibility="gone"
+        android:src="@drawable/key" />
+
+ <!--   <include
+        android:id="@+id/splash_view"
+        layout="@layout/splash" />-->
+    <FrameLayout
+        android:id="@+id/bannerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_statubar"
+        android:layout_gravity="top" >
+    </FrameLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <Button
+            android:id="@+id/showIAD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="展示插屏广告" />
+
+        <Button
+            android:id="@+id/showIADAsPPW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="展示插屏广告(PopupWindow)" />
+
+        <Button
+            android:id="@+id/closePPWIAD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="关闭插屏广告(PopupWindow)" />
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,144 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+-optimizationpasses 5
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-keepattributes *Annotation*
+-dontpreverify
+-verbose
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class com.ray.honeycombsmaze.R$*{
+public static final int *;
+} 
+-keep class com.honeycombsmaze.view.** { *; }
+
+#########################         第三方jar包 在这里添加                 #######################
+#The below is used for AdsMOGO_Android_SDK_1.5.6 settings
+ 
+
+############################  ↓↓↓↓ 取消 多盟 百度 和爱gae  ↓↓↓↓########################################
+#-libraryjars /libs/Baidu_MobAds_SDK_Agg_3.44.jar 
+#-libraryjars /libs/domob_android_sdk_4.2.7.jar
+#-libraryjars /libs/mobisageSDK_v6.4.2.jar 
+###############################↑↑↑↑↑↑↑↑↑↑↑↑######################################
+
+-libraryjars /libs/AdsMOGO_Android_SDK_1.5.6.jar
+-libraryjars /libs/adchina_android_sdk_v3.2.0.jar 
+-libraryjars /libs/gdtmob_release_4.2.464.jar 
+-libraryjars /libs/android-support-v4.jar
+-libraryjars /libs/httpmime-4.1.2.jar
+ 
+-libraryjars /libs/umeng-analytics-v5.4.1.jar
+-libraryjars /libs/umeng-update-v2.4.2.jar 
+
+#####################u meng update#######################################
+-keepclassmembers class * {
+   public <init>(org.json.JSONObject);
+}
+
+# 以下类过滤不混淆  
+-keep public class * extends com.umeng.**
+# 以下包不进行过滤 
+-keep class com.umeng.** { *; }
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+ 
+
+
+-keep public class com.adsmogo.** {*;} 
+
+-keep class android.support.v4.** { *; }  
+-keep interface android.support.v4.app.** { *; } 
+
+# for wqmobile ad sdk 
+-keeppackagenames com.wqmobile 
+-keep class   com.wqmobile.** {*;}
+
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+
+ 
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-dontwarn com.android.vending.licensing.**  
+-dontwarn android.webkit.**  
+-dontwarn com.tencent.mm.sdk.openapi.**  
+-dontwarn com.tencent.tauth.**  
+-dontwarn com.tencent.mm.sdk.modelmsg.**  
+-dontwarn com.tencent.mm.sdk.openapi.** 
+-dontwarn com.adchina.android.share.util.**
+-dontwarn com.mobisage.android.**
+-dontwarn com.msagecore.**
+-dontwarn com.a.a.a.b.c.**
+
+-keep public class com.android.vending.licensing.** {*;}  
+-keep public class android.webkit.** {*;}  
+-keep public class com.tencent.mm.sdk.openapi.** {*;}  
+-keep public class com.tencent.tauth.** {*;}   
+-keep public class com.tencent.mm.sdk.modelmsg.** {*;}  
+-keep public class com.tencent.mm.sdk.openapi.** {*;}  
+-keep public class com.chance.report.** {*;}  
+-keep public class com.tencent.mm.sdk.modelbase.** {*;}
+
+#####################################################################3
+-keep public class com.adsage.sdk.dlplugin.util.http.** {*;}
+
+
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+-keepclasseswithmembernames class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembernames class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+####################################AD#######################
+-dontoptimize -dontwarn com.mobisage.android.** 
+-keep class com.mobisage.** {*;} 
+-keep interface com.mobisage.** {*;}
+-keep class com.adchina.android.** { *; }
+-keep class com.baidu.mobads.** {
+  public protected *;
+}
+  -keep class com.qq.e.** {
+   public protected *; 
+   } 
+   -keep class com.tencent.gdt.**{ 
+   public protected *; 
+   }
